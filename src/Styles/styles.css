@@ -1,0 +1,108 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#drum-machine {
+  width: 450px;
+  margin: auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Keyboard Button Styling */
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.drum-pad {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.drum-pad:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.drum-pad:active {
+  background-color: #222;
+  transform: scale(0.95);
+}
+
+.drum-pad:focus {
+  outline: none;
+}
+
+/* Control Panel Styling */
+#control {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#control h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#control input[type="range"] {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#control button {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#control button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+#control button:active {
+  background-color: #1e7e34;
+  transform: scale(0.95);
+}
+
+#control button:focus {
+  outline: none;
+}
+
+/* Audio Clips Hidden */
+.clip {
+  display: none;
+}
